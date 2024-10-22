@@ -13,13 +13,17 @@ function variableHello (name) {
     const today = new Date()
     const hours = today.getHours()
 
-    if (hours >= 0 && hours <= 13) {
-        return 'Buongiorno ' + name
-    } else if (hours >= 14 && hours <= 17) {
-        return 'Buon pomeriggio ' + name
+    let message = ''
+
+    if (hours <= 13) {
+        message = 'Buongiorno '
+    } else if (hours <= 17) {
+        message = 'Buon pomeriggio '
+    } else {
+        message = 'Buonasera '
     }
 
-    return 'Buonasera ' + name
+    return message + name
 }
 
 // Invoca la funzione qui e stampa il risultato in console
