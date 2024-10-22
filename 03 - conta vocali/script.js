@@ -10,6 +10,8 @@ function countVowels (string) {
     for(let i = 0; i < string.length; i++) {
         const letter = word.charAt(i)
 
+        // if(vowels.includes(letter)) {counter++}
+
         for (let j = 0; j < vowels.length; j++) {
             if (letter.toLowerCase() === vowels[j]) {
                 counter++
