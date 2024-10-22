@@ -11,7 +11,7 @@ function countVowels (string) {
         const letter = word.charAt(i)
 
         for (let j = 0; j < vowels.length; j++) {
-            if (letter === vowels[j]) {
+            if (letter.toLowerCase() === vowels[j]) {
                 counter++
             }
         }
